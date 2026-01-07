@@ -1,0 +1,41 @@
+/* Navbar.css */
+.navbar {
+    background: linear-gradient(90deg, #2d5074, #0056b3);
+    color: rgb(179, 161, 161);
+    position:fixed;
+  }
+  
+  .navbar .navbar-brand {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .navbar .navbar-brand .logo {
+    height: 10px;
+    width: auto;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #ffd700;
+  }
+  
+  /* Apply proper padding and make sure items align well */
+  .navbar .container {
+    
+    padding-right: 1px;
+  }
+  
+  .navbar-nav.ml-auto {
+    margin-left: auto !important; /* Ensures right alignment for navbar items */
+  }
+  
+  .logo {
+    padding-right: 10px;
+  }

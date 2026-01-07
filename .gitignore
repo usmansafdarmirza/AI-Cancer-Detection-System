@@ -1,0 +1,13 @@
+# Node (backend)
+backend/node_modules/
+backend/.env
+
+# Python (AI)
+ulms-backend/venv310/
+ulms-backend/__pycache__/
+ulms-backend/uploads/
+ulms-backend/ultralytics/    <-- ADD THIS LINE
+*.txt
+
+# System
+.DS_Store

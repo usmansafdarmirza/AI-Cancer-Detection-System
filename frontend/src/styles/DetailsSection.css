@@ -1,0 +1,69 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Dreaming+Out+Loud+Pro&display=swap');
+/* General Styling */
+.details-section {
+  background: #ECFEFF;
+  font-family: 'Dreaming Out Loud Pro', sans-serif; /* Apply font globally */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: space-evenly; /* Align cards evenly */
+}
+
+.details-heading {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333;
+  text-align: center; /* Center the heading */
+  width: 100%;
+}
+/* Graph Cards */
+.detail-card {
+  background-color: #e0f7ff;
+  border: 1px solid #b0d4e3;
+  transition: 0.3s ease;
+  font-family: 'Dreaming Out Loud Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px; /* Increased max-width for graph cards */
+  height: auto; /* Let content determine height */
+}
+
+/* Cards below the graphs */
+.card-body .card-title, 
+.card-body .card-text, 
+.card-body .list-group-item {
+  font-size: clamp(0.9rem, 1.5vw, 1rem); /* Ensure consistent font size */
+  color: #333;
+}
+
+.card-body .card-text-muted {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.6;
+  text-align: justify;
+  font-style: italic;
+}
+
+/* For cards containing text content (like Performance Metrics) */
+.detail-card .card-body {
+  padding: 15px; /* Ensure padding inside cards */
+  height: auto; /* Let the height be adjusted based on content */
+}
+
+/* General Card hover effect */
+.detail-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(27, 27, 27, 0.822);
+}
+
+.graph-image {
+  width: 100%; /* Ensure the graph takes full width of the card */
+  height: 500px; /* Adjust the height to fit the card better */
+  object-fit: contain; /* Ensure the graph fits without distortion */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  margin-bottom: 10px; /* Space below the graph */
+}
